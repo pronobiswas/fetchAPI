@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .log {
+  width: 200px;
+  height: 100%;
+  background: #000;
+}
+nav .linkMenu {
+  width: 100%;
+}
+nav .linkMenu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+nav .linkMenu ul li {
+  font-size: 22px;
+}
+nav .menuItem {
+  width: 100px;
+  height: 100%;
+  background: #000;
+}
+
+#demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#demo .card {
+  width: 350px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.1098039216);
+  padding: 15px 8px;
+}
+#demo .card p {
+  width: 340px;
+  height: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}/*# sourceMappingURL=sassStyle.css.map */

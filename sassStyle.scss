@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+  list-style-type: none;
+}
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .log{
+    width: 200px;
+    height: 100%;
+    background: #000;
+  }
+  .linkMenu{
+    width: 100%;
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      li{
+        font-size: 22px;
+      }
+    }
+  }
+  .menuItem{
+    width: 100px;
+    height: 100%;
+    background: #000;
+  }
+}
+#demo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  .card{
+    width: 350px;
+    height: 120px;
+    background: #0000001c;
+    padding: 15px 8px;
+
+    p{
+      width: 340px;
+      height: 60px;
+      // background: red;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      // white-space: nowrap;
+    }
+  }
+}
