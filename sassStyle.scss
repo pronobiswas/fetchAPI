@@ -1,59 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul,ol{
+ul,
+ol {
   list-style-type: none;
 }
-.container{
+.container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
-nav{
+nav {
   width: 100%;
   height: 80px;
-  background-color: aqua;
+  background-color: #00000039;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .log{
+  position: fixed;
+  top: 0;
+  left: 0;
+  .log {
     width: 200px;
     height: 100%;
-    background: #000;
+    background: #00000073;
   }
-  .linkMenu{
+  .linkMenu {
     width: 100%;
-    ul{
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    display: block;
+    ul {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 20px;
-      li{
+      li {
         font-size: 22px;
       }
     }
   }
-  .menuItem{
+  .subMenu {
     width: 100px;
     height: 100%;
     background: #000;
+    position: relative;
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+    .kkk {
+      display: none;
+    }
+    .submenulist {
+      width: 200px;
+      background: rgba(255, 0, 0, 0.512);
+      position: absolute;
+      top: 80px;
+      right: 0;
+      padding: 10px 20px;
+      // display: none;
+      
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
-#demo{
+.pic {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  position: fixed;
+  bottom: 10px;
+}
+#demo {
+  padding: 100px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  .card{
+  .card {
     width: 350px;
-    height: 120px;
+    height: 140px;
     background: #0000001c;
     padding: 15px 8px;
+    h2 {
+      width: 100%;
+      height: 54px;
+      overflow: hidden;
+    }
 
-    p{
+    p {
       width: 340px;
       height: 60px;
       // background: red;

@@ -33,37 +33,40 @@ function seven (){
     console.log("fun seven");
 }
 // <<<<<<<<=====call the function ========>>>>>>>>>
-one(10)
-five()
+// one(10)
+// five()
+
 
 // <<<<<<<<<<<======function in parameter and agrument=====>>>>>>>>>>>>>
-function first (callback , num){
-    console.log("this is first");
-    let incrase = parseInt(num + 50);
-    callback(incrase)
+// function first (callback , num){
+//     console.log("this is first");
+//     let incrase = parseInt(num + 50);
+//     callback(incrase)
     
-}
-function scecond (callback,num){
-    console.log("this is scecond");
-    let incrase = parseInt(num + 50);
-    callback(incrase)
+// }
+// function scecond (callback,num){
+//     console.log("this is scecond");
+//     let incrase = parseInt(num + 50);
+//     callback(incrase)
     
-}
-function third (callback , num){
-    console.log("this is third");
-    let incrase = parseInt(num + 50);
-    callback(incrase)
-}
-function fourth (callback, num){
-    console.log("this is fourth");
-    let incrase = parseInt(num + 50);
-    callback(incrase)
-}
-function fifth (callback , num){
-    console.log("this is fiveth");
-    let incrase = parseInt(num + 50);
-    callback(incrase)
-}
+// }
+// function third (callback , num){
+//     console.log("this is third");
+//     let incrase = parseInt(num + 50);
+//     callback(incrase)
+// }
+// function fourth (callback, num){
+//     console.log("this is fourth");
+//     let incrase = parseInt(num + 50);
+//     callback(incrase)
+// }
+// function fifth (callback , num){
+//     console.log("this is fiveth");
+//     let incrase = parseInt(num + 50);
+//     callback(incrase)
+// }
+
+// =========<<<<<<< callbackHell >>>>>>>>=======
 // =========<<<<<<< callbackHell >>>>>>>>=======
 // first( (incrase)=>{
 //     scecond((incrase)=>{
@@ -79,8 +82,9 @@ function fifth (callback , num){
 // } , 50 )
 
 // =========<<<<<<<  selfInnovocation >>>>>>>>>=========
+// =========<<<<<<<  selfInnovocation >>>>>>>>>=========
 
-(function () {
-    console.log("Hello! I called myself");
+// (function () {
+//     console.log("Hello! I called myself");
     
-})();
+// })();
