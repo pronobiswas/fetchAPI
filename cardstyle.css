@@ -1,10 +1,14 @@
 .warpper{
     width: 100%;
     height: 100vh;
+    background-color: #0000006c;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* flex-direction: column; */
+    row-gap: 30px;
 }
+
 h3{
     font-size: 34px;
     line-height: .8;
@@ -13,24 +17,26 @@ h3{
 p{
     font-size: 20px;
 }
-.card{
-    width: 300px;
+
+.Mcard{
+    width: 400px;
    padding: 30px;
     background: #ffffff;
     text-align: center;
     border-radius: 20px;
     position: relative;
+    
 }
 @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
-.card::after , .card::before{
+.Mcard::after , .Mcard::before{
     position: absolute;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 410px;
+    height: 410px;
     padding: 5px;
     background-image: conic-gradient(from var(--angle) ,  red , blue ,green ,yellow, skyblue,red  ) ;
     top: 50%;
@@ -40,8 +46,8 @@ p{
     z-index: -1;
     animation: 3s spin linear infinite;
 }
-.card::before{
-    filter: blur(10px);
+.Mcard::before{
+    filter: blur(5px);
     opacity: .5;
 }
 @keyframes spin{
@@ -51,3 +57,23 @@ p{
         --angle:360deg;
     }
 }
+
+.carousel-box{
+    width: 100%;
+    max-width: 600px;
+    /* height: 350px; */
+    /* overflow: hidden; */
+    
+}
+.carousel{
+    background: #8888881d;
+}
+ .carousel-item{
+    height: 100%;
+    background: red;
+ }
+ .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }

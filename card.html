@@ -5,13 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./cardstyle.css">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 <body>
-    <div class="warpper">
-        <div class="card">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit, iure atque nisi, eligendi deleniti quia, facilis ab dignissimos delectus ut hic beatae. Quis, fuga odit sequi nesciunt magni officia!</p>
+    <nav id="navbar">
+        <div class="logo">
+
+        </div>
+        <div class="menu">
+            <a href="#">about</a>
+            <a href="#">galary</a>
+            <a href="#">contact</a>
+        </div>
+    </nav>
+    <div id="mainArea">
+        <div class="warpper">
+            <div class="cardW">
+                <div class="Mcard">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit, iure atque nisi, eligendi deleniti quia, facilis ab dignissimos delectus ut hic beatae. Quis, fuga odit sequi nesciunt magni officia!</p>
+                </div>
+            </div>
+            
+                <div class="carousel-box">
+                    <div class="carousel">
+                        <a class="carousel-item" onclick="changeBg('imageOne.jpg')" href="#one!"><img src="./image/imageOne.jpg" alt="png"></a>
+                        <a class="carousel-item" onclick="changeBg('imageTwo.jpg')" href="#two!"><img src="./image/imageTwo.jpg" alt="png" ></a>
+                        <a class="carousel-item" onclick="changeBg('imageThree.jpg')"  href="#three!"><img src="./image/imageThree.jpg" alt="png" ></a>
+                        <a class="carousel-item" onclick="changeBg('th.jpeg')"  href="#four!"><img src="./image/th.jpeg" alt="png" ></a>
+                        <a class="carousel-item" onclick="changeBg('imageFive.jpg')"  href="#five!" ><img src="./image/imageFive.jpg" alt="png" ></a>
+                      </div>
+                </div>
         </div>
     </div>
+
+
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <script>
+        function changeBg (e){
+            const main = document.getElementById("mainArea");
+            const warpper = document.querySelector(".warpper")
+            
+            warpper.style.backgroundImage = `url("./image/${e}")`;
+            warpper.style.backgroundSize ="cover"
+
+            console.log(warpper);
+            console.log(e);
+            
+        };
+        
+            // Or with jQuery
+
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
 </body>
 </html>
